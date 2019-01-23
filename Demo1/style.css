@@ -1,5 +1,5 @@
 html,body{
-	margin:0;
+	margin:5;
 	padding:0;
 	width:100%;
 	height:100%;
@@ -31,15 +31,15 @@ div#rightside{
 div#dataPanel{
 	width:90%;
 	height:50%;
-	overflow:auto;
 	border:2px solid #DDDDDD;
 }
+
 div#leftside input{
 	width:90%;
 }
 
 div#leftside input.navi{
-	font-size:18px;
+	font-size:15px;
 	height:30px;
 	margin-bottom:10px;
 }
@@ -49,19 +49,19 @@ div#rightside input{
 }
 
 div#rightside input.navi{
-	font-size:18px;
+	font-size:15px;
 	height:30px;
 	margin-bottom:10px;
 }
 
 div ul{
 	margin-top:30px;
-	margin-bottom:30px;
+	margin-bottom:10px;
 }
 div ul li{
 	display: inline;
 	list-style-type: none;
-	padding-right: 40px;
+	padding-right: 30px;
 	font-size:18px;
 	font-weight:bold;
 }
