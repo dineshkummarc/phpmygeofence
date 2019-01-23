@@ -19,9 +19,13 @@ div#main-map{
 	height:70%;
 	float:left;
 }
-div#side{
+div#leftside{
 	width:15%;
 	float:left;
+}
+div#rightside{
+	width:15%;
+	float:right;
 }
 
 div#dataPanel{
@@ -30,15 +34,28 @@ div#dataPanel{
 	overflow:auto;
 	border:2px solid #DDDDDD;
 }
-div#side input{
+div#leftside input{
 	width:90%;
 }
 
-div#side input.navi{
+div#leftside input.navi{
 	font-size:18px;
 	height:30px;
 	margin-bottom:10px;
+	vertical-align: center;
 }
+
+div#rightside input{
+	width:90%;
+}
+
+div#rightside input.navi{
+	font-size:18px;
+	height:30px;
+	margin-bottom:10px;
+	vertical-align: center;
+}
+
 div ul{
 	margin-top:30px;
 	margin-bottom:30px;
@@ -63,7 +80,6 @@ div#header p{
 }
 span.instruction{
 	font-weight:bold;
-	
 }
 
 .message-box { text-align: center; padding: 5px; color:#545454; width:80%;  margin:5px auto; font-size:12px;}
