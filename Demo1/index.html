@@ -2,8 +2,6 @@
 <head> 
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
 	<title>Google Map V3 Polygon Creator</title>
-	<meta name="keywords" content="polygon,creator,google map,v3,draw,paint">
-	<meta name="description" content="Google Map V3 Polygon Creator">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
@@ -19,14 +17,12 @@
 		  	mapTypeId: google.maps.MapTypeId.ROADMAP
 		  }
 		 map = new google.maps.Map(document.getElementById('main-map'), myOptions);
-		 
 		 var creator = new PolygonCreator(map);
 		 
 		 //reset
 		 $('#reset').click(function(){ 
 		 		creator.destroy();
 		 		creator=null;
-		 		
 		 		creator=new PolygonCreator(map);
 		 });		 
 		 
