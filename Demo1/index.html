@@ -24,6 +24,7 @@
 		 		creator.destroy();
 		 		creator=null;
 		 		creator=new PolygonCreator(map);
+				$('#dataPanel').empty();
 		 });		 
 		 
 		 
@@ -78,7 +79,7 @@
 	<div id="rightside">
 		<input id="showData"  value="Get Latitude-Longitude" type="button" class="navi"/>
 		<input id="addInDatabase"  value="Save Polygon" type="button" class="navi"/>
-	<div id="dataPanel"></div>
+	<textarea rows="25" cols="20" id="dataPanel"></textarea>
 	</div>
 </body>
 </html>
