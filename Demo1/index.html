@@ -25,8 +25,8 @@
 		 		creator=null;
 		 		creator=new PolygonCreator(map);
 				$('#dataPanel').empty();
+				$('#dataPanel1').empty();
 		 });		 
-		 
 		 
 		 //show paths
 		 $('#showData').click(function(){ 
@@ -40,11 +40,11 @@
 		 
 		 //show color
 		 $('#showColor').click(function(){ 
-		 		$('#dataPanel').empty();
+		 		$('#dataPanel1').empty();
 		 		if(null==creator.showData()){
-		 			$('#dataPanel').append('Please first create a polygon');
+		 			$('#dataPanel1').append('Please first create a polygon');
 		 		}else{
-		 				$('#dataPanel').append(creator.showColor());
+		 				$('#dataPanel1').append(creator.showColor());
 		 		}
 		 });
 		 
@@ -73,6 +73,7 @@
 	<div id="leftside">
 		<input id="reset" value="Reset" type="button" class="navi"/>
 		<input id="showColor"  value="Show Color" type="button" class="navi"/>
+		<textarea rows="25" cols="20" id="dataPanel1"></textarea>
 	</div>
 	</div>
 	<div id="main-map"></div>
