@@ -42,7 +42,6 @@ div#leftside input.navi{
 	font-size:18px;
 	height:30px;
 	margin-bottom:10px;
-	vertical-align: center;
 }
 
 div#rightside input{
@@ -53,7 +52,6 @@ div#rightside input.navi{
 	font-size:18px;
 	height:30px;
 	margin-bottom:10px;
-	vertical-align: center;
 }
 
 div ul{
