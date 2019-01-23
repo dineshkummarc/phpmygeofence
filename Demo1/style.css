@@ -5,11 +5,6 @@ html,body{
 	height:100%;
 }
 
-form.pay{
-	width:200px;
-	display:inline;
-}
-
 div#header{	
 	vertical-align:middle;
 	border-bottom:1px solid #000;
@@ -32,9 +27,9 @@ div#rightside{
 }
 
 div#dataPanel{
-	width:90%;
-	height:50%;
-	border:2px solid #DDDDDD;
+	margin:10;
+	padding:0;
+	border:1px solid #DDDDDD;
 }
 
 div#leftside input{
