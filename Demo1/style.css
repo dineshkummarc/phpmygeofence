@@ -3,6 +3,7 @@ html,body{
 	padding:0;
 	width:100%;
 	height:100%;
+	text-align: center;
 }
 
 div#header{	
@@ -30,6 +31,8 @@ div#dataPanel{
 	margin:10;
 	padding:0;
 	border:1px solid #DDDDDD;
+	width:100%;
+	height:100%;
 }
 
 div#leftside input{
