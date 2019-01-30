@@ -48,7 +48,7 @@
 		 		}
 		 });
 		 
-		 //show color
+		 //save polygon
 		 $('#addInDatabase').click(function(){ 
 		 		$('#dataPanel').empty();
 		 		if(null==creator.showData()){
@@ -64,23 +64,23 @@
 </head>
 <body>
 	<div id="header">
-		<ul><li class="title">Polygon Creator Class (For Google Map API v3)</li></ul>
-	   <p><span class="instruction">Demo Instruction:</span>
-		Left click on the map to create markers, when last marker meets first marker, it will form a polygon.
-		Right click on the polygon to change its color.
-	   </p>
+	<ul><li class="title">Polygon Creator Class (For Google Map API v3)</li></ul>
+	<p><span class="instruction">Demo Instruction:</span>
+	Left click on the map to create markers, when last marker meets first marker, it will form a polygon.
+	Right click on the polygon to change its color.
+	</p>
 	</div>
 	<div id="leftside">
-		<input id="reset" value="Reset" type="button" class="navi"/>
-		<input id="showColor"  value="Show Color" type="button" class="navi"/>
-		<textarea rows="25" cols="20" id="dataPanel1"></textarea>
+	<input id="reset" value="Reset" type="button" class="navi"/>
+	<input id="showColor"  value="Show Color" type="button" class="navi"/>
+	<textarea rows="25" cols="20" id="dataPanel1"></textarea>
 	</div>
 	</div>
 	<div id="main-map"></div>
 	<div id="rightside">
-		<input id="showData"  value="Get Latitude-Longitude" type="button" class="navi"/>
-		<input id="addInDatabase"  value="Save Polygon" type="button" class="navi"/>
-	    <textarea rows="25" cols="20" id="dataPanel"></textarea>
+	<input id="showData"  value="Get Latitude-Longitude" type="button" class="navi"/>
+	<input id="addInDatabase"  value="Save Polygon" type="button" class="navi"/>
+	<textarea rows="25" cols="20" id="dataPanel"></textarea>
 	</div>
 </body>
 </html>
