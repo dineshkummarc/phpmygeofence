@@ -28,7 +28,7 @@
 		 
 		 //show paths
 		 $('#showData').click(function(){ 
-		 		$('#dataPanel').empty();
+		 		//$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
@@ -38,7 +38,7 @@
 		 
 		 //show color
 		 $('#showColor').click(function(){ 
-		 		$('#dataPanel').empty();
+		 		//$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
@@ -46,9 +46,21 @@
 		 		}
 		 });
 		 
+		 //copy to clipboard
+		 $('#copyclipboard').click(function(){ 
+		 		//$('#dataPanel').empty();
+		 		if(null==creator.showData()){
+		 			$('#dataPanel').append('Please first create a polygon');
+		 		}else{
+		 				$('#dataPanel').append(creator.showColor());
+						$('#dataPanel').append('Copied to Clipboard');
+						
+		 		}
+		 });
+		 
 		 //save polygon
 		 $('#addInDatabase').click(function(){ 
-		 		$('#dataPanel').empty();
+		 		//$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
@@ -71,6 +83,7 @@
 	<div id="leftside">
 	<input id="showData"  value="Get Latitude-Longitude" type="button" class="navi"/>
 	<input id="addInDatabase"  value="Save Polygon" type="button" class="navi"/>
+	<input id="copyclipboard"  value="Copy to Cipboard" type="button" class="navi"/>
 	<input id="showColor"  value="Show Color" type="button" class="navi"/>
 	<input id="reset" value="Reset Polygon" type="button" class="navi"/>
 	<!-- <textarea rows="5" cols="20" id="dataPanel1"></textarea>  -->
