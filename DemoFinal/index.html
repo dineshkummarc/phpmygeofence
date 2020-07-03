@@ -28,7 +28,7 @@
 		 
 		 //show paths
 		 $('#showData').click(function(){ 
-		 		//$('#dataPanel').empty();
+		 		$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
@@ -38,7 +38,7 @@
 		 
 		 //show color
 		 $('#showColor').click(function(){ 
-		 		//$('#dataPanel').empty();
+		 		$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
@@ -48,11 +48,11 @@
 		 
 		 //copy to clipboard
 		 $('#copyclipboard').click(function(){ 
-		 		//$('#dataPanel').empty();
+		 		$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
-		 				$('#dataPanel').append(creator.showColor());
+
 						$('#dataPanel').append('Copied to Clipboard');
 						
 		 		}
@@ -60,7 +60,7 @@
 		 
 		 //save polygon
 		 $('#addInDatabase').click(function(){ 
-		 		//$('#dataPanel').empty();
+		 		$('#dataPanel').empty();
 		 		if(null==creator.showData()){
 		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
