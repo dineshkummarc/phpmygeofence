@@ -1,6 +1,5 @@
 <html > 
-<head> 
-	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+<head>
 	<title>Google Map V3 Polygon Creator</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
@@ -25,7 +24,7 @@
 		 		creator=null;
 		 		creator=new PolygonCreator(map);
 				$('#dataPanel').empty();
-				$('#dataPanel1').empty();
+				// $('#dataPanel1').empty();
 		 });		 
 		 
 		 //show paths
@@ -40,11 +39,11 @@
 		 
 		 //show color
 		 $('#showColor').click(function(){ 
-		 		$('#dataPanel1').empty();
+		 		$('#dataPanel').empty();
 		 		if(null==creator.showData()){
-		 			$('#dataPanel1').append('Please first create a polygon');
+		 			$('#dataPanel').append('Please first create a polygon');
 		 		}else{
-		 				$('#dataPanel1').append(creator.showColor());
+		 				$('#dataPanel').append(creator.showColor());
 		 		}
 		 });
 		 
@@ -63,20 +62,21 @@
 	</script>
 </head>
 <body>
-	<div id="header">
+	<!-- <div id="header">
 	<ul><li class="title">Polygon Creator Class (For Google Map API v3)</li></ul>
 	<p><span class="instruction">Demo Instruction:</span>
 	Left click on the map to create markers, when last marker meets first marker, it will form a polygon.
 	Right click on the polygon to change its color.
 	</p>
-	</div>
+	</div> -->
 	<div id="leftside">
-	<input id="reset" value="Reset" type="button" class="navi"/>
+	<input id="reset" value="Reset Polygon" type="button" class="navi"/>
 	<input id="showColor"  value="Show Color" type="button" class="navi"/>
-	<textarea rows="25" cols="20" id="dataPanel1"></textarea>
+	<!-- <textarea rows="5" cols="20" id="dataPanel1"></textarea>  -->
 	</div>
-	</div>
+	
 	<div id="main-map"></div>
+	
 	<div id="rightside">
 	<input id="showData"  value="Get Latitude-Longitude" type="button" class="navi"/>
 	<input id="addInDatabase"  value="Save Polygon" type="button" class="navi"/>
