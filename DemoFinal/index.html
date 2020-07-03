@@ -58,6 +58,18 @@
 		 		}
 		 });
 		 
+		 //copy to clipboard
+		 $('#uploadlatlong').click(function(){ 
+		 		$('#dataPanel').empty();
+		 		//if(null==creator.showData()){
+		 			$('#dataPanel').append('Please first create a polygon');
+		 		//}else{
+
+						$('#dataPanel').append('File uploaded successfully');
+						
+		 		//}
+		 });
+		 
 		 //save polygon
 		 $('#addInDatabase').click(function(){ 
 		 		$('#dataPanel').empty();
