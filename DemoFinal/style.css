@@ -87,6 +87,12 @@ div#header p{
 	padding-left:20px;
 }
 
+div#rightside p{
+	color:#888;
+	font-size:14px;
+	padding-left:0px;
+}
+
 span.instruction{
 	font-weight:bold;
 }
